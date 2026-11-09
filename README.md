@@ -1,4 +1,4 @@
-# LYTON Portfolio
+# Conceptual Portfolio design
 
 A light, editorial landing page for an independent UI/UX designer and software
 engineer. Built with Astro as a static-first site, with the hero split into
