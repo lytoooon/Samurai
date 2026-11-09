@@ -1,0 +1,165 @@
+<header class="site-header">
+	<a class="wordmark" href="#top">
+		<span class="wordmark-symbol" aria-hidden="true">L</span>
+		<span>LYTON<span class="wordmark-period">.</span></span>
+	</a>
+	<div class="header-note">
+		<span class="availability-dot" aria-hidden="true"></span>
+		<span>INDEPENDENT DESIGNER &amp; ENGINEER</span>
+	</div>
+	<a class="contact-link" href="mailto:hello@lyton.design">LET’S TALK</a>
+</header>
+
+<style>
+	.site-header {
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		left: 0;
+		display: flex;
+		width: 100%;
+		height: 128px;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 var(--gutter);
+	}
+
+	.wordmark {
+		display: inline-flex;
+		min-height: 44px;
+		align-items: center;
+		gap: 14px;
+		font-size: 17px;
+		font-weight: 700;
+		letter-spacing: 0.11em;
+	}
+
+	.wordmark-symbol {
+		display: grid;
+		width: 42px;
+		height: 42px;
+		place-items: center;
+		border: 1px solid var(--red);
+		border-radius: 50%;
+		color: var(--red);
+		font-family: var(--display);
+		font-size: 22px;
+		font-weight: 500;
+		letter-spacing: 0;
+	}
+
+	.wordmark-period {
+		color: var(--red);
+	}
+
+	.header-note,
+	.contact-link {
+		display: flex;
+		align-items: center;
+		font-size: 11px;
+		font-weight: 600;
+		letter-spacing: 0.15em;
+	}
+
+	.header-note {
+		gap: 11px;
+		color: var(--muted);
+	}
+
+	.availability-dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: var(--red);
+		box-shadow: 0 0 0 4px rgba(211, 41, 32, 0.1);
+	}
+
+	.contact-link {
+		position: relative;
+		display: grid;
+		min-width: 142px;
+		min-height: 54px;
+		place-items: center;
+		overflow: hidden;
+		border: 1px solid var(--red);
+		font-size: 11px;
+		isolation: isolate;
+		transition: color 280ms ease, border-color 280ms ease;
+	}
+
+	.contact-link::before {
+		position: absolute;
+		z-index: -1;
+		inset: 0;
+		background: var(--red);
+		content: "";
+		transform: scaleY(0);
+		transform-origin: bottom;
+		transition: transform 360ms cubic-bezier(0.2, 0.8, 0.2, 1);
+	}
+
+	.contact-link::after {
+		position: absolute;
+		right: 15px;
+		bottom: 11px;
+		left: 15px;
+		height: 1px;
+		color: var(--red);
+		background: var(--red);
+		content: "";
+		transform: scaleX(0.14);
+		transform-origin: left;
+		transition: transform 360ms cubic-bezier(0.2, 0.8, 0.2, 1), background 280ms ease;
+	}
+
+	.contact-link:hover,
+	.contact-link:focus-visible {
+		color: var(--paper);
+		border-color: var(--red);
+	}
+
+	.contact-link:hover::before,
+	.contact-link:focus-visible::before {
+		transform: scaleY(1);
+	}
+
+	.contact-link:hover::after,
+	.contact-link:focus-visible::after {
+		background: var(--paper);
+		transform: scaleX(1);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.contact-link,
+		.contact-link::before,
+		.contact-link::after {
+			transition-duration: 0.01ms;
+		}
+	}
+
+	@media (max-width: 760px) {
+		.site-header {
+			height: 90px;
+		}
+
+		.header-note {
+			display: none;
+		}
+
+		.contact-link {
+			min-width: 120px;
+			min-height: 48px;
+			font-size: 10px;
+		}
+
+		.wordmark {
+			font-size: 15px;
+		}
+
+		.wordmark-symbol {
+			width: 36px;
+			height: 36px;
+			font-size: 19px;
+		}
+	}
+</style>

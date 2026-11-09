@@ -1,0 +1,57 @@
+:root {
+	color-scheme: light;
+	--paper: #f5f3ed;
+	--ink: #1d1b19;
+	--muted: #716d66;
+	--red: #d32920;
+	--line: rgba(29, 27, 25, 0.18);
+	--display: "Shippori Mincho", "Yu Mincho", "Hiragino Mincho ProN", Georgia, serif;
+	--sans: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+	--gutter: clamp(24px, 6.2vw, 96px);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 320px;
+	background: var(--paper);
+	scroll-behavior: smooth;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	color: var(--ink);
+	background: var(--paper);
+	font-family: var(--sans);
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection {
+	color: var(--paper);
+	background: var(--red);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:focus-visible {
+	outline: 2px solid var(--red);
+	outline-offset: 5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+	}
+}

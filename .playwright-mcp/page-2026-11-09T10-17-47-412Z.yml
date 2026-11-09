@@ -1,0 +1,33 @@
+- main [ref=e2]:
+  - region "LYTON — digital design and software engineering" [ref=e3]:
+    - generic [ref=e4]:
+      - img "An original sculptural red liquid form"
+      - generic [ref=e5]:
+        - link "LYTON." [ref=e6] [cursor=pointer]:
+          - /url: "#top"
+          - generic [aria-hidden] [ref=e7]: L
+        - link "LET’S TALK" [ref=e9] [cursor=pointer]:
+          - /url: mailto:hello@lyton.design
+          - text: LET’S TALK
+          - generic [aria-hidden] [ref=e10]: ↗
+      - generic [ref=e11]:
+        - paragraph [ref=e12]:
+          - generic [ref=e13]: "01"
+          - text: DIGITAL PRACTICE
+          - generic [ref=e14]: /
+          - text: "2026"
+        - heading "LYTON." [level=1] [ref=e15]
+        - heading "Thoughtful digital. Made to move." [level=2] [ref=e16]: Thoughtful digital.Made to move.
+        - paragraph [ref=e17]: I shape clear, characterful digital experiences — from the first sketch to the final line of code.
+        - link "HAVE A GOOD ONE IN MIND?" [ref=e18] [cursor=pointer]:
+          - /url: mailto:hello@lyton.design
+          - generic [aria-hidden] [ref=e19]: ↗
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]: UI / UX DESIGN
+          - generic [aria-hidden] [ref=e24]: ✳
+          - generic [ref=e25]: SOFTWARE ENGINEERING
+        - generic [ref=e26]:
+          - generic [ref=e27]: SCROLL TO FEEL THE FLOW
+          - generic [aria-hidden] [ref=e28]: ↓
+      - progressbar "Scroll-driven fluid animation" [ref=e29]
